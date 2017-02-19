@@ -493,6 +493,44 @@ case "$DEVICE" in
             -e 's block/bootdevice/by-name/userdata mmcblk0p46 ' \
 	    "$@"
         ;;
+    "oneplus3")
+        sed -i \
+            -e 's block/bootdevice/by-name/ssd sda1 ' \
+            -e 's block/bootdevice/by-name/persist sda2 ' \
+            -e 's block/bootdevice/by-name/cache sda3 ' \
+            -e 's block/bootdevice/by-name/misc sda4 ' \
+            -e 's block/bootdevice/by-name/keystore sda5  ' \
+            -e 's block/bootdevice/by-name/devcfg sda6 ' \
+            -e 's block/bootdevice/by-name/devcfgbak sda7  ' \
+            -e 's block/bootdevice/by-name/frp sda8 ' \
+            -e 's block/bootdevice/by-name/oem_dycnvbk sda9 ' \
+            -e 's block/bootdevice/by-name/oem_stanvbk sda10 ' \
+            -e 's block/bootdevice/by-name/param sda11 ' \
+            -e 's block/bootdevice/by-name/reserve1 sda12  ' \
+            -e 's block/bootdevice/by-name/reserve2 sde13 ' \
+            -e 's block/bootdevice/by-name/config sde14  ' \
+            -e 's block/bootdevice/by-name/userdata sde15 ' \
+            -e 's block/bootdevice/by-name/abootbak sde16 ' \
+            -e 's block/bootdevice/by-name/LOGO sde17 ' \
+            -e 's block/bootdevice/by-name/boot sde18 ' \
+            -e 's block/bootdevice/by-name/boot_aging sde19  ' \
+            -e 's block/bootdevice/by-name/system sde20 ' \
+            -e 's block/bootdevice/by-name/recovery sde21  ' \
+            -e 's block/bootdevice/by-name/devinfo sde22 ' \
+            -e 's block/bootdevice/by-name/bluetooth sde23 ' \
+            -e 's block/bootdevice/by-name/keymaster sde24 ' \
+            -e 's block/bootdevice/by-name/keymasterbak sde25 ' \
+            -e 's block/bootdevice/by-name/cmnlib sde26  ' \
+            -e 's block/bootdevice/by-name/cmnlibbak sde27 ' \
+            -e 's block/bootdevice/by-name/cmnlib64 sde28  ' \
+            -e 's block/bootdevice/by-name/cmnlib64bak sde29 ' \
+            -e 's block/bootdevice/by-name/apdp sde30 ' \
+            -e 's block/bootdevice/by-name/msadp sde31 ' \
+            -e 's block/bootdevice/by-name/dpo sde32 ' \
+            -e 's block/bootdevice/by-name/splash sde33  ' \
+            -e 's block/bootdevice/by-name/sti sde34 ' \
+            "$@"
+        ;;
     *)
 	cat <<EOF
 
