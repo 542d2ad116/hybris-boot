@@ -509,7 +509,7 @@ case "$DEVICE" in
             -e 's block/bootdevice/by-name/reserve1 sda12  ' \
             -e 's block/bootdevice/by-name/reserve2 sde13 ' \
             -e 's block/bootdevice/by-name/config sde14  ' \
-            -e 's block/bootdevice/by-name/userdata sde15 ' \
+            -e 's block/bootdevice/by-name/userdata sda15 ' \
             -e 's block/bootdevice/by-name/abootbak sde16 ' \
             -e 's block/bootdevice/by-name/LOGO sde17 ' \
             -e 's block/bootdevice/by-name/boot sde18 ' \
